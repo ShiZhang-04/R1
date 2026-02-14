@@ -1,0 +1,102 @@
+{
+  "name": "WaterTycoon",
+  "tree": {
+    "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "MainGameSystems": {
+        "$path": "src/server/MainGameSystems.server.lua"
+      },
+      "DevToolServer": {
+        "$path": "src/server/DevToolServer.server.lua"
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "PlantPrompts": {
+          "$path": "src/client/PlantPrompts.client.lua"
+        }
+      }
+    },
+
+    "StarterGui": {
+      "$className": "StarterGui",
+      "ShopGui": {
+        "$path": "src/assets/ShopGui.rbxm"
+      }
+    },
+
+    "StarterPack": {
+      "$className": "StarterPack",
+      "DevTablet": {
+        "$className": "Tool",
+        "$properties": {
+          "RequiresHandle": false,
+          "ToolTip": "Hold to Open Dev Menu",
+          "CanBeDropped": false
+        },
+        "ClientHandler": {
+          "$path": "src/client/DevToolClient.client.lua"
+        }
+      }
+    },
+
+    "Workspace": {
+      "$className": "Workspace",
+      "$ignoreUnknownInstances": true,
+      
+      "Baseplate": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "Locked": true,
+          "Size": [1024, 10, 1024],
+          "CFrame": [0, -5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1],
+          "Color": [0.95, 0.8, 0.6],
+          "Material": "Sand"
+        }
+      },
+
+      "SpawnLocation": {
+        "$className": "SpawnLocation",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "Size": [12, 1, 12],
+          "Position": [0, 0.5, 0],
+          "Transparency": 1, 
+          "Duration": 0
+        }
+      },
+  
+      "ShopNPC": {
+        "$path": "src/assets/ShopNPC.Model.rbxm"
+      },
+      
+      "Tank": {
+          "$path": "src/assets/Tank.Model.rbxm"
+        },
+        "WaterSource": {
+          "$path": "src/assets/WaterSource.Model.rbxm"
+        },
+        "PlantSoil": {
+          "$path": "src/assets/PlantSoil.Model.rbxm"
+        }
+      
+    },
+
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+                "PlantEvent":       {"$className":"RemoteEvent"},
+                "OpenShopEvent":    {"$className":"RemoteEvent"},
+                "BuyItemEvent":     {"$className":"RemoteEvent"},
+                "PlaceItemEvent":   {"$className":"RemoteEvent"},
+                "Modules":          {"$className": "Folder","VoxelManager": {"$path": "src/shared/VoxelManager.lua"}}
+        }
+    }
+}
