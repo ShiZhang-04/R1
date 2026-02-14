@@ -7,7 +7,26 @@ local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 
 print("Server starting - MainGameSystems loading...")
+print("Server: Checking required remotes...")
 
+local PlantEvent     = ReplicatedStorage:FindFirstChild("PlantEvent")
+local OpenShopEvent  = ReplicatedStorage:FindFirstChild("OpenShopEvent")
+local BuyItemEvent   = ReplicatedStorage:FindFirstChild("BuyItemEvent")
+local PlaceItemEvent = ReplicatedStorage:FindFirstChild("PlaceItemEvent")
+
+local missing = {}
+
+if not (PlantEvent     and PlantEvent:IsA("RemoteEvent"))     then table.insert(missing, "PlantEvent")     end
+if not (OpenShopEvent  and OpenShopEvent:IsA("RemoteEvent"))  then table.insert(missing, "OpenShopEvent")  end
+if not (BuyItemEvent   and BuyItemEvent:IsA("RemoteEvent"))   then table.insert(missing, "BuyItemEvent")   end
+if not (PlaceItemEvent and PlaceItemEvent:IsA("RemoteEvent")) then table.insert(missing, "PlaceItemEvent") end
+
+if #missing > 0 then
+    warn("MISSING REMOTES: " .. table.concat(missing, ", "))
+    warn("These RemoteEvents must exist in ReplicatedStorage!")
+else
+    print("All remotes ready ✓")
+end
 -- Leaderstats + Thirst
 Players.PlayerAdded:Connect(function(player)
     print(player.Name .. " joined - setting up leaderstats")
