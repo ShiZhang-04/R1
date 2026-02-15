@@ -31,7 +31,6 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
             <ul><li>⌨️ <i>ProximityPrompt ("Open Shop")</i></li></ul>
           </li>
           <li>🧠 Humanoid (Optional)</li>
-        </ul>
       </details>
     </li>
     <li>
