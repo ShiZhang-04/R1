@@ -16,56 +16,51 @@ rojo serve
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
 
-<br>R1/
-<br>├── README.md
-<br>└── my-new-game1/
-<br>    ├── build-rebooted.rbxlx
-<br>    ├── default.project.json
-<br>    └── src/
-<br>        ├── Client/
-<br>        │   ├── DevToolClient.client.lua
-<br>        │   └── PlantPrompts.client.lua
-<br>        ├── assets/
-<br>        │   ├── PlantSoil.Model.rbxm
-<br>        │   ├── ShopGui.rbxm
-<br>        │   ├── ShopNPC.Model.rbxm
-<br>        │   ├── Tank.Model.rbxm
-<br>        │   └── WaterSource.Model.rbxm
-<br>        └── server/
-<br>            ├── DevToolServer.server.lua
-<br>            └── MainGameSystems.server.lua
-- - - - - - - - - - - - - - - - - - - - - 
-<br>Workspace
-<br>├── Baseplate (Part)                  ← your big sand ground
-<br>├── SpawnLocation                     ← default spawn
-<br>├── ShopNPC (Model)                   ← the hub NPC
-<br>│   ├── NPCBody (Part)                ← main body (humanoid-shaped)
-<br>│   │   └── ProximityPrompt           ← "Open Shop" prompt
-<br>│   └── Humanoid (optional)
-<br>├── Tank (Model)                      ← one example tank (duplicate as needed)
-<br>│   ├── TankBody (Part)               ← visible shell, red/metal
-<br>│   │   └── ProximityPrompt           ← "Collect Water" prompt
-<br>│   ├── WaterLevel (Part)             ← visible blue fill
-<br>│   │   - Anchored = true
-<br>│   │   - Bottom origin (Position.Y = inner bottom)
-<br>│   │   - Size.Y = max water height
-<br>│   └── GhostWater (Part)             ← invisible hit surface
-<br>│       - Name = GhostWater (exact)
-<br>│       - Transparency = 1
-<br>│       - CanCollide = false
-<br>│       - Anchored = true
-<br>│       - Position = max water surface (top)
-<br>│       - Size.X/Z = open area size
-<br>│       - Size.Y = thin (0.1–0.5)
-<br>├── WaterSource (Model)               ← drip emitter (duplicate as needed)
-<br>│   └── DripPoint (Attachment or Part)
-<br>│       - Position = where drips start (above tank)
-<br>│       └── ParticleEmitter (optional) ← for visual drips
-<br>└── PlantPlot (Model)                 ← one example plot (duplicate as needed)
-<br>    ├── Soil (Part)                   ← flat ground
-<br>    │   └── ProximityPrompt           ← "Plant Seed" prompt
-<br>    └── Plant (Part)                  ← small starting plant
-<br>        - Anchored = true
-<br>        - Size = (0.5, 0.5, 0.5) initially
-<br>
-|__|__|__|__|__|_|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
+# Project Structure
+
+## 📂 Roblox Workspace Hierarchy
+*   **Workspace**
+    *   **Baseplate (Part)** — Your big sand ground
+    *   **SpawnLocation** — Default spawn
+    *   **ShopNPC (Model)** — The hub NPC
+        *   **NPCBody (Part)** — Main body (humanoid-shaped)
+            *   **ProximityPrompt** — "Open Shop" prompt
+        *   **Humanoid** (optional)
+    *   **Tank (Model)** — One example tank (duplicate as needed)
+        *   **TankBody (Part)** — Visible shell, red/metal
+            *   **ProximityPrompt** — "Collect Water" prompt
+        *   **WaterLevel (Part)** — Visible blue fill
+            *   Properties: Anchored=true, Bottom origin, Size.Y=max height
+        *   **GhostWater (Part)** — Invisible hit surface
+            *   Properties: Name="GhostWater", Transparency=1, CanCollide=false, Anchored=true
+    *   **WaterSource (Model)** — Drip emitter (duplicate as needed)
+        *   **DripPoint (Attachment or Part)** — Where drips start
+            *   **ParticleEmitter** (optional) — Visual drips
+    *   **PlantPlot (Model)** — One example plot (duplicate as needed)
+        *   **Soil (Part)** — Flat ground
+            *   **ProximityPrompt** — "Plant Seed" prompt
+        *   **Plant (Part)** — Small starting plant
+            *   Properties: Anchored=true, Size=(0.5, 0.5, 0.5)
+
+---
+
+## 📂 Filesystem (Rojo Project)
+*   **R1/**
+    *   `README.md`
+    *   **my-new-game1/**
+        *   `build-rebooted.rbxlx`
+        *   `default.project.json`
+        *   **src/**
+            *   **Client/**
+                *   `DevToolClient.client.lua`
+                *   `PlantPrompts.client.lua`
+            *   **assets/**
+                *   `PlantSoil.Model.rbxm`
+                *   `ShopGui.rbxm`
+                *   `ShopNPC.Model.rbxm`
+                *   `Tank.Model.rbxm`
+                *   `WaterSource.Model.rbxm`
+            *   **server/**
+                *   `DevToolServer.server.lua`
+                *   `MainGameSystems.server.lua`
+
