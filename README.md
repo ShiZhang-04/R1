@@ -64,3 +64,20 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
                 *   `DevToolServer.server.lua`
                 *   `MainGameSystems.server.lua`
 
+<details>
+  <summary><b>📂 Workspace Hierarchy</b></summary>
+  <ul>
+    <li>📦 <b>Baseplate</b></li>
+    <li>
+      <details>
+        <summary>🛡️ <b>Tank (Model)</b></summary>
+        <ul>
+          <li>🟥 TankBody</li>
+          <li>🟦 WaterLevel</li>
+        </ul>
+      </details>
+    </li>
+    <!-- Thêm các thành phần khác tương tự -->
+  </ul>
+</details>
+
