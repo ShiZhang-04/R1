@@ -120,30 +120,30 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
 </details>
 
 
-
 ### 📂 Project Interactive Structure
 
+<!-- Workspace Hierarchy -->
 <details open>
-  <summary><b>🌍 Workspace Hierarchy</b></summary>
-  <div style="line-height: 1.2; margin-left: 10px;">
-    📦 <b>Baseplate</b> (Part)<br>
-    🏁 <b>SpawnLocation</b><br>
+  <summary>🌎 <b>Workspace Hierarchy</b></summary>
+  <div style="margin-left: 25px; line-height: 1.4;">
+    📦 Baseplate (Part)<br>
+    🏁 SpawnLocation<br>
     <details>
-      <summary>👤 <b>ShopNPC</b> (Model)</summary>
+      <summary>👤 ShopNPC (Model)</summary>
       <div style="margin-left: 20px;">
         🟦 NPCBody ➔ ⌨️ <i>ProximityPrompt</i><br>
         🧠 Humanoid
       </div>
     </details>
     <details>
-      <summary>🛡️ <b>Tank</b> (Model)</summary>
+      <summary>🛡️ Tank (Model)</summary>
       <div style="margin-left: 20px;">
         🟥 TankBody ➔ ⌨️ <i>ProximityPrompt</i><br>
         🟦 WaterLevel / 👻 GhostWater
       </div>
     </details>
     <details>
-      <summary>🌱 <b>PlantPlot</b> (Model)</summary>
+      <summary>🌱 PlantPlot (Model)</summary>
       <div style="margin-left: 20px;">
         🟫 Soil ➔ ⌨️ <i>ProximityPrompt</i><br>
         🌿 Plant (Part)
@@ -154,31 +154,39 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
 
 <br>
 
+<!-- Rojo Filesystem -->
 <details open>
-  <summary><b>📁 R1 (Rojo Filesystem)</b></summary>
-  <div style="line-height: 1.1; margin-left: 10px;">
+  <summary>📂 <b>R1 (Rojo Filesystem)</b></summary>
+  <div style="margin-left: 25px; line-height: 1.4;">
     📄 <code>README.md</code><br>
     ⚙️ <code>build-rebooted.rbxlx</code><br>
     📋 <code>default.project.json</code><br>
     <details open>
       <summary>📂 <b>src</b></summary>
-      <div style="margin-left: 20px;">
+      <div style="margin-left: 25px;">
         <details>
-          <summary>📁 <b>Client</b></summary>
-          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>DevToolClient.client.lua</code><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>PlantPrompts.client.lua</code>
+          <summary>📂 Client</summary>
+          <div style="margin-left: 20px;">
+            📜 <code>DevToolClient.client.lua</code><br>
+            📜 <code>PlantPrompts.client.lua</code>
+          </div>
         </details>
         <details>
-          <summary>📁 <b>assets</b></summary>
-          &nbsp;&nbsp;&nbsp;&nbsp;📦 <code>PlantSoil.Model.rbxm</code>, <code>ShopGui.rbxm</code>...
+          <summary>📂 assets</summary>
+          <div style="margin-left: 20px;">
+            📦 <code>PlantSoil.Model.rbxm</code>, <code>ShopGui.rbxm</code>...
+          </div>
         </details>
         <details>
-          <summary>📁 <b>server</b></summary>
-          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>DevToolServer.server.lua</code><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>MainGameSystems.server.lua</code>
+          <summary>📂 server</summary>
+          <div style="margin-left: 20px;">
+            📜 <code>DevToolServer.server.lua</code><br>
+            📜 <code>MainGameSystems.server.lua</code>
+          </div>
         </details>
       </div>
     </details>
   </div>
 </details>
+
 
