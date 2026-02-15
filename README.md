@@ -16,58 +16,58 @@ rojo serve
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
 
-R1/
-├── README.md
-└── my-new-game1/
-    ├── build-rebooted.rbxlx
-    ├── default.project.json
-    └── src/
-        ├── Client/
-        │   ├── DevToolClient.client.lua
-        │   └── PlantPrompts.client.lua
-        ├── assets/
-        │   ├── PlantSoil.Model.rbxm
-        │   ├── ShopGui.rbxm
-        │   ├── ShopNPC.Model.rbxm
-        │   ├── Tank.Model.rbxm
-        │   └── WaterSource.Model.rbxm
-        └── server/
-            ├── DevToolServer.server.lua
-            └── MainGameSystems.server.lua
-
+<p>R1/
+<p>├── README.md
+<p>└── my-new-game1/
+<p>    ├── build-rebooted.rbxlx
+<p>    ├── default.project.json
+<p>    └── src/
+<p>        ├── Client/
+<p>        │   ├── DevToolClient.client.lua
+<p>        │   └── PlantPrompts.client.lua
+<p>        ├── assets/
+<p>        │   ├── PlantSoil.Model.rbxm
+<p>        │   ├── ShopGui.rbxm
+<p>        │   ├── ShopNPC.Model.rbxm
+<p>        │   ├── Tank.Model.rbxm
+<p>        │   └── WaterSource.Model.rbxm
+<p>        └── server/
+<p>            ├── DevToolServer.server.lua
+<p>            └── MainGameSystems.server.lua
+<p>
 - - - - - - - - - - - - - - - - - - - - - 
-
-Workspace
-├── Baseplate (Part)                  ← your big sand ground
-├── SpawnLocation                     ← default spawn
-├── ShopNPC (Model)                   ← the hub NPC
-│   ├── NPCBody (Part)                ← main body (humanoid-shaped)
-│   │   └── ProximityPrompt           ← "Open Shop" prompt
-│   └── Humanoid (optional)
-├── Tank (Model)                      ← one example tank (duplicate as needed)
-│   ├── TankBody (Part)               ← visible shell, red/metal
-│   │   └── ProximityPrompt           ← "Collect Water" prompt
-│   ├── WaterLevel (Part)             ← visible blue fill
-│   │   - Anchored = true
-│   │   - Bottom origin (Position.Y = inner bottom)
-│   │   - Size.Y = max water height
-│   └── GhostWater (Part)             ← invisible hit surface
-│       - Name = GhostWater (exact)
-│       - Transparency = 1
-│       - CanCollide = false
-│       - Anchored = true
-│       - Position = max water surface (top)
-│       - Size.X/Z = open area size
-│       - Size.Y = thin (0.1–0.5)
-├── WaterSource (Model)               ← drip emitter (duplicate as needed)
-│   └── DripPoint (Attachment or Part)
-│       - Position = where drips start (above tank)
-│       └── ParticleEmitter (optional) ← for visual drips
-└── PlantPlot (Model)                 ← one example plot (duplicate as needed)
-    ├── Soil (Part)                   ← flat ground
-    │   └── ProximityPrompt           ← "Plant Seed" prompt
-    └── Plant (Part)                  ← small starting plant
-        - Anchored = true
-        - Size = (0.5, 0.5, 0.5) initially
-
+<p>
+<p>Workspace
+<p>├── Baseplate (Part)                  ← your big sand ground
+<p>├── SpawnLocation                     ← default spawn
+<p>├── ShopNPC (Model)                   ← the hub NPC
+<p>│   ├── NPCBody (Part)                ← main body (humanoid-shaped)
+<p>│   │   └── ProximityPrompt           ← "Open Shop" prompt
+<p>│   └── Humanoid (optional)
+<p>├── Tank (Model)                      ← one example tank (duplicate as needed)
+<p>│   ├── TankBody (Part)               ← visible shell, red/metal
+<p>│   │   └── ProximityPrompt           ← "Collect Water" prompt
+<p>│   ├── WaterLevel (Part)             ← visible blue fill
+<p>│   │   - Anchored = true
+<p>│   │   - Bottom origin (Position.Y = inner bottom)
+<p>│   │   - Size.Y = max water height
+<p>│   └── GhostWater (Part)             ← invisible hit surface
+<p>│       - Name = GhostWater (exact)
+<p>│       - Transparency = 1
+<p>│       - CanCollide = false
+<p>│       - Anchored = true
+<p>│       - Position = max water surface (top)
+<p>│       - Size.X/Z = open area size
+<p>│       - Size.Y = thin (0.1–0.5)
+<p>├── WaterSource (Model)               ← drip emitter (duplicate as needed)
+<p>│   └── DripPoint (Attachment or Part)
+<p>│       - Position = where drips start (above tank)
+<p>│       └── ParticleEmitter (optional) ← for visual drips
+<p>└── PlantPlot (Model)                 ← one example plot (duplicate as needed)
+<p>    ├── Soil (Part)                   ← flat ground
+<p>    │   └── ProximityPrompt           ← "Plant Seed" prompt
+<p>    └── Plant (Part)                  ← small starting plant
+<p>        - Anchored = true
+<p>        - Size = (0.5, 0.5, 0.5) initially
+<p>
 |__|__|__|__|__|_|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
