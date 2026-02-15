@@ -15,3 +15,59 @@ rojo serve
 ```
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
+
+R1/
+├── README.md
+└── my-new-game1/
+    ├── build-rebooted.rbxlx
+    ├── default.project.json
+    └── src/
+        ├── Client/
+        │   ├── DevToolClient.client.lua
+        │   └── PlantPrompts.client.lua
+        ├── assets/
+        │   ├── PlantSoil.Model.rbxm
+        │   ├── ShopGui.rbxm
+        │   ├── ShopNPC.Model.rbxm
+        │   ├── Tank.Model.rbxm
+        │   └── WaterSource.Model.rbxm
+        └── server/
+            ├── DevToolServer.server.lua
+            └── MainGameSystems.server.lua
+
+- - - - - - - - - - - - - - - - - - - - - 
+
+Workspace
+├── Baseplate (Part)                  ← your big sand ground
+├── SpawnLocation                     ← default spawn
+├── ShopNPC (Model)                   ← the hub NPC
+│   ├── NPCBody (Part)                ← main body (humanoid-shaped)
+│   │   └── ProximityPrompt           ← "Open Shop" prompt
+│   └── Humanoid (optional)
+├── Tank (Model)                      ← one example tank (duplicate as needed)
+│   ├── TankBody (Part)               ← visible shell, red/metal
+│   │   └── ProximityPrompt           ← "Collect Water" prompt
+│   ├── WaterLevel (Part)             ← visible blue fill
+│   │   - Anchored = true
+│   │   - Bottom origin (Position.Y = inner bottom)
+│   │   - Size.Y = max water height
+│   └── GhostWater (Part)             ← invisible hit surface
+│       - Name = GhostWater (exact)
+│       - Transparency = 1
+│       - CanCollide = false
+│       - Anchored = true
+│       - Position = max water surface (top)
+│       - Size.X/Z = open area size
+│       - Size.Y = thin (0.1–0.5)
+├── WaterSource (Model)               ← drip emitter (duplicate as needed)
+│   └── DripPoint (Attachment or Part)
+│       - Position = where drips start (above tank)
+│       └── ParticleEmitter (optional) ← for visual drips
+└── PlantPlot (Model)                 ← one example plot (duplicate as needed)
+    ├── Soil (Part)                   ← flat ground
+    │   └── ProximityPrompt           ← "Plant Seed" prompt
+    └── Plant (Part)                  ← small starting plant
+        - Anchored = true
+        - Size = (0.5, 0.5, 0.5) initially
+
+|__|__|__|__|__|_|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|__|
