@@ -123,78 +123,62 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
 
 ### 📂 Project Interactive Structure
 
-<!-- Cấu trúc Workspace -->
 <details open>
   <summary><b>🌍 Workspace Hierarchy</b></summary>
-  <ul style="line-height: 1.2;">
-    <li>📦 <b>Baseplate</b> (Part)</li>
-    <li>🏁 <b>SpawnLocation</b></li>
-    <li>
-      <details>
-        <summary>👤 <b>ShopNPC</b> (Model)</summary>
-        <ul style="list-style-type: none; margin-left: 15px;">
-          <li>🟦 NPCBody ➔ ⌨️ <i>ProximityPrompt</i></li>
-          <li>🧠 Humanoid</li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <details>
-        <summary>🛡️ <b>Tank</b> (Model)</summary>
-        <ul style="list-style-type: none; margin-left: 15px;">
-          <li>🟥 TankBody ➔ ⌨️ <i>ProximityPrompt</i></li>
-          <li>🟦 WaterLevel / 👻 GhostWater</li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <details>
-        <summary>🌱 <b>PlantPlot</b> (Model)</summary>
-        <ul style="list-style-type: none; margin-left: 15px;">
-          <li>🟫 Soil ➔ ⌨️ <i>ProximityPrompt</i></li>
-          <li>🌿 Plant (Part)</li>
-        </ul>
-      </details>
-    </li>
-  </ul>
+  <div style="line-height: 1.2; margin-left: 10px;">
+    📦 <b>Baseplate</b> (Part)<br>
+    🏁 <b>SpawnLocation</b><br>
+    <details>
+      <summary>👤 <b>ShopNPC</b> (Model)</summary>
+      <div style="margin-left: 20px;">
+        🟦 NPCBody ➔ ⌨️ <i>ProximityPrompt</i><br>
+        🧠 Humanoid
+      </div>
+    </details>
+    <details>
+      <summary>🛡️ <b>Tank</b> (Model)</summary>
+      <div style="margin-left: 20px;">
+        🟥 TankBody ➔ ⌨️ <i>ProximityPrompt</i><br>
+        🟦 WaterLevel / 👻 GhostWater
+      </div>
+    </details>
+    <details>
+      <summary>🌱 <b>PlantPlot</b> (Model)</summary>
+      <div style="margin-left: 20px;">
+        🟫 Soil ➔ ⌨️ <i>ProximityPrompt</i><br>
+        🌿 Plant (Part)
+      </div>
+    </details>
+  </div>
 </details>
 
 <br>
 
-<!-- Cấu trúc Rojo Filesystem - Đã sửa lỗi khoảng cách lớn -->
 <details open>
   <summary><b>📁 R1 (Rojo Filesystem)</b></summary>
-  <ul style="line-height: 1.1; list-style-type: none; margin-left: 10px;">
-    <li>📄 <code>README.md</code></li>
-    <li>⚙️ <code>build-rebooted.rbxlx</code></li>
-    <li>📋 <code>default.project.json</code></li>
-    <li>
-      <details open>
-        <summary>📁 <b>src</b></summary>
-        <ul style="list-style-type: none; margin-left: 15px;">
-          <li>
-            <details>
-              <summary>📁 <b>Client</b></summary>
-              <code style="margin-left: 20px;">DevToolClient.client.lua</code><br>
-              <code style="margin-left: 20px;">PlantPrompts.client.lua</code>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>📁 <b>assets</b></summary>
-              <code style="margin-left: 20px;">PlantSoil.rbxm</code>, <code>ShopGui.rbxm</code>, <code>Tank.rbxm</code>...
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary>📁 <b>server</b></summary>
-              <code style="margin-left: 20px;">DevToolServer.server.lua</code><br>
-              <code style="margin-left: 20px;">MainGameSystems.server.lua</code>
-            </details>
-          </li>
-        </ul>
-      </details>
-    </li>
-  </ul>
+  <div style="line-height: 1.1; margin-left: 10px;">
+    📄 <code>README.md</code><br>
+    ⚙️ <code>build-rebooted.rbxlx</code><br>
+    📋 <code>default.project.json</code><br>
+    <details open>
+      <summary>📂 <b>src</b></summary>
+      <div style="margin-left: 20px;">
+        <details>
+          <summary>📁 <b>Client</b></summary>
+          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>DevToolClient.client.lua</code><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>PlantPrompts.client.lua</code>
+        </details>
+        <details>
+          <summary>📁 <b>assets</b></summary>
+          &nbsp;&nbsp;&nbsp;&nbsp;📦 <code>PlantSoil.Model.rbxm</code>, <code>ShopGui.rbxm</code>...
+        </details>
+        <details>
+          <summary>📁 <b>server</b></summary>
+          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>DevToolServer.server.lua</code><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;📜 <code>MainGameSystems.server.lua</code>
+        </details>
+      </div>
+    </details>
+  </div>
 </details>
 
