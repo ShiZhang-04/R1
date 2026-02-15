@@ -27,7 +27,8 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
     <li>
       <details>
         <summary>🍱 <b>ShopNPC</b> (Model)</summary>
-          <li>📦 NPCBody (Part)
+          <ul>
+            <li>📦 NPCBody (Part)
             <ul><li>⌨️ <i>ProximityPrompt ("Open Shop")</i></li></ul>
           </li>
           <li>🧍 Humanoid (Optional)</li>
