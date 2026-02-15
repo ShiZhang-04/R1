@@ -34,9 +34,7 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
 <br>        └── server/
 <br>            ├── DevToolServer.server.lua
 <br>            └── MainGameSystems.server.lua
-<br>
 - - - - - - - - - - - - - - - - - - - - - 
-<br>
 <br>Workspace
 <br>├── Baseplate (Part)                  ← your big sand ground
 <br>├── SpawnLocation                     ← default spawn
