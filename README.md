@@ -26,30 +26,30 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
     <li>🏁 <b>SpawnLocation</b></li>
     <li>
       <details>
-        <summary>👤 <b>ShopNPC</b> (Model)</summary>
-          <li>🟦 NPCBody (Part)
+        <summary>🍱 <b>ShopNPC</b> (Model)</summary>
+          <li>📦 NPCBody (Part)
             <ul><li>⌨️ <i>ProximityPrompt ("Open Shop")</i></li></ul>
           </li>
-          <li>🧠 Humanoid (Optional)</li>
+          <li>🧍 Humanoid (Optional)</li>
       </details>
     </li>
     <li>
       <details>
-        <summary>🛡️ <b>Tank</b> (Model)</summary>
+        <summary>🍱 <b>Tank</b> (Model)</summary>
         <ul>
-          <li>🟥 TankBody (Part)
+          <li>📦 TankBody (Part)
             <ul><li>⌨️ <i>ProximityPrompt ("Collect Water")</i></li></ul>
           </li>
-          <li>🟦 WaterLevel (Part)</li>
-          <li>👻 GhostWater (Part)</li>
+          <li>📦 WaterLevel (Part)</li>
+          <li>📦 GhostWater (Part)</li>
         </ul>
       </details>
     </li>
     <li>
       <details>
-        <summary>💧 <b>WaterSource</b> (Model)</summary>
+        <summary>🍱 <b>WaterSource</b> (Model)</summary>
         <ul>
-          <li>📍 DripPoint (Attachment/Part)
+          <li>📦 DripPoint (Attachment/Part)
             <ul><li>✨ <i>ParticleEmitter</i></li></ul>
           </li>
         </ul>
@@ -57,12 +57,12 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
     </li>
     <li>
       <details>
-        <summary>🌱 <b>PlantPlot</b> (Model)</summary>
+        <summary>🍱 <b>PlantPlot</b> (Model)</summary>
         <ul>
-          <li>🟫 Soil (Part)
+          <li>📦 Soil (Part)
             <ul><li>⌨️ <i>ProximityPrompt ("Plant Seed")</i></li></ul>
           </li>
-          <li>🌿 Plant (Part)</li>
+          <li>📦 Plant (Part)</li>
         </ul>
       </details>
     </li>
