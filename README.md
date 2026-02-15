@@ -93,7 +93,6 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
                     </ul>
                   </details>
                 </li>
-                <li>
                   <details>
                     <summary>📁 <b>assets</b></summary>
                     <ul>
@@ -105,7 +104,6 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
                     </ul>
                   </details>
                 </li>
-                <li>
                   <details>
                     <summary>📁 <b>server</b></summary>
                     <ul>
