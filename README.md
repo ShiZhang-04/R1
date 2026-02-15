@@ -78,11 +78,7 @@ For more help, check out [the Rojo documentation](https://rojo.space/docs).
   <summary><b>📁 R1 (Rojo Filesystem)</b></summary>
   <ul>
     <li>📄 <code>README.md</code></li>
-    <li>
-      <details>
-        <summary>📁 <b>my-new-game1</b></summary>
-        <ul>
-          <li>⚙️ <code>build-rebooted.rbxlx</code></li>
+    <li>⚙️ <code>build-rebooted.rbxlx</code></li>
           <li>📋 <code>default.project.json</code></li>
           <li>
             <details>
