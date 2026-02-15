@@ -16,68 +16,113 @@ rojo serve
 
 For more help, check out [the Rojo documentation](https://rojo.space/docs).
 
-# Project Structure
+### 📂 Project Interactive Structure
 
-## 📂 Roblox Workspace Hierarchy
-*   **Workspace**
-    *   **Baseplate (Part)** — Your big sand ground
-    *   **SpawnLocation** — Default spawn
-    *   **ShopNPC (Model)** — The hub NPC
-        *   **NPCBody (Part)** — Main body (humanoid-shaped)
-            *   **ProximityPrompt** — "Open Shop" prompt
-        *   **Humanoid** (optional)
-    *   **Tank (Model)** — One example tank (duplicate as needed)
-        *   **TankBody (Part)** — Visible shell, red/metal
-            *   **ProximityPrompt** — "Collect Water" prompt
-        *   **WaterLevel (Part)** — Visible blue fill
-            *   Properties: Anchored=true, Bottom origin, Size.Y=max height
-        *   **GhostWater (Part)** — Invisible hit surface
-            *   Properties: Name="GhostWater", Transparency=1, CanCollide=false, Anchored=true
-    *   **WaterSource (Model)** — Drip emitter (duplicate as needed)
-        *   **DripPoint (Attachment or Part)** — Where drips start
-            *   **ParticleEmitter** (optional) — Visual drips
-    *   **PlantPlot (Model)** — One example plot (duplicate as needed)
-        *   **Soil (Part)** — Flat ground
-            *   **ProximityPrompt** — "Plant Seed" prompt
-        *   **Plant (Part)** — Small starting plant
-            *   Properties: Anchored=true, Size=(0.5, 0.5, 0.5)
-
----
-
-## 📂 Filesystem (Rojo Project)
-*   **R1/**
-    *   `README.md`
-    *   **my-new-game1/**
-        *   `build-rebooted.rbxlx`
-        *   `default.project.json`
-        *   **src/**
-            *   **Client/**
-                *   `DevToolClient.client.lua`
-                *   `PlantPrompts.client.lua`
-            *   **assets/**
-                *   `PlantSoil.Model.rbxm`
-                *   `ShopGui.rbxm`
-                *   `ShopNPC.Model.rbxm`
-                *   `Tank.Model.rbxm`
-                *   `WaterSource.Model.rbxm`
-            *   **server/**
-                *   `DevToolServer.server.lua`
-                *   `MainGameSystems.server.lua`
-
-<details>
-  <summary><b>📂 Workspace Hierarchy</b></summary>
+<!-- Cấu trúc Workspace -->
+<details open>
+  <summary><b>🌍 Workspace Hierarchy</b></summary>
   <ul>
-    <li>📦 <b>Baseplate</b></li>
+    <li>📦 <b>Baseplate</b> (Part)</li>
+    <li>🏁 <b>SpawnLocation</b></li>
     <li>
       <details>
-        <summary>🛡️ <b>Tank (Model)</b></summary>
+        <summary>👤 <b>ShopNPC</b> (Model)</summary>
         <ul>
-          <li>🟥 TankBody</li>
-          <li>🟦 WaterLevel</li>
+          <li>🟦 NPCBody (Part)
+            <ul><li>⌨️ <i>ProximityPrompt ("Open Shop")</i></li></ul>
+          </li>
+          <li>🧠 Humanoid (Optional)</li>
         </ul>
       </details>
     </li>
-    <!-- Thêm các thành phần khác tương tự -->
+    <li>
+      <details>
+        <summary>🛡️ <b>Tank</b> (Model)</summary>
+        <ul>
+          <li>🟥 TankBody (Part)
+            <ul><li>⌨️ <i>ProximityPrompt ("Collect Water")</i></li></ul>
+          </li>
+          <li>🟦 WaterLevel (Part)</li>
+          <li>👻 GhostWater (Part)</li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>💧 <b>WaterSource</b> (Model)</summary>
+        <ul>
+          <li>📍 DripPoint (Attachment/Part)
+            <ul><li>✨ <i>ParticleEmitter</i></li></ul>
+          </li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>🌱 <b>PlantPlot</b> (Model)</summary>
+        <ul>
+          <li>🟫 Soil (Part)
+            <ul><li>⌨️ <i>ProximityPrompt ("Plant Seed")</i></li></ul>
+          </li>
+          <li>🌿 Plant (Part)</li>
+        </ul>
+      </details>
+    </li>
   </ul>
 </details>
 
+<br>
+
+<!-- Cấu trúc Rojo Filesystem -->
+<details>
+  <summary><b>📁 R1 (Rojo Filesystem)</b></summary>
+  <ul>
+    <li>📄 <code>README.md</code></li>
+    <li>
+      <details>
+        <summary>📁 <b>my-new-game1</b></summary>
+        <ul>
+          <li>⚙️ <code>build-rebooted.rbxlx</code></li>
+          <li>📋 <code>default.project.json</code></li>
+          <li>
+            <details>
+              <summary>📁 <b>src</b></summary>
+              <ul>
+                <li>
+                  <details>
+                    <summary>📁 <b>Client</b></summary>
+                    <ul>
+                      <li>📜 <code>DevToolClient.client.lua</code></li>
+                      <li>📜 <code>PlantPrompts.client.lua</code></li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>📁 <b>assets</b></summary>
+                    <ul>
+                      <li>📦 <code>PlantSoil.Model.rbxm</code></li>
+                      <li>📦 <code>ShopGui.rbxm</code></li>
+                      <li>📦 <code>ShopNPC.Model.rbxm</code></li>
+                      <li>📦 <code>Tank.Model.rbxm</code></li>
+                      <li>📦 <code>WaterSource.Model.rbxm</code></li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>📁 <b>server</b></summary>
+                    <ul>
+                      <li>📜 <code>DevToolServer.server.lua</code></li>
+                      <li>📜 <code>MainGameSystems.server.lua</code></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+</details>
